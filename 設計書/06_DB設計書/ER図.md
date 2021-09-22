@@ -27,6 +27,7 @@ package "ECサイト" as target_system {
         address
         tel
         mail
+        rank
         del_flag
         reg_date
     }
@@ -35,6 +36,7 @@ package "ECサイト" as target_system {
         + order_id [PK]
         --
         # customer_code [FK]
+        # sports_id [FK]
         purchase_date
         total_price
     }
@@ -43,6 +45,7 @@ package "ECサイト" as target_system {
         + detail_id[PK]
         + order_id[PK]
         --
+        # sports_id [FK]
         # item_code [FK]
         price
         num
@@ -52,6 +55,7 @@ package "ECサイト" as target_system {
         + item_code [PK]
         --
         item_name
+        # sports_id [FK]
         price
         # category_id [FK]
         image
@@ -60,8 +64,8 @@ package "ECサイト" as target_system {
         reg_date
     }
     
-    entity "カテゴリマスタ" as category <m_category> <<M,MASTER_MARK_COLOR>> {
-        + category_id [PK]
+    entity "ランクマスタ" as category <m_category> <<M,MASTER_MARK_COLOR>> {
+        +  [PK]
         --
         name
         reg_date
