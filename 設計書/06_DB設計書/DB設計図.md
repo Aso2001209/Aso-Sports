@@ -55,3 +55,16 @@
 |detail|varchar(500)||||
 |del_flag|int(11)||||
 |reg_date|date||○||
+
+## m_items
+
+|項目名|型|PK|NN|FK|
+|-----|--|--|--|--|
+|item_code|int(11)|○|○||
+|item_name|varchar(50)||○||
+|sports-id|varchar(30)||○|○|
+|price|int(11)||○||
+|image|varchar(200)||○||
+||||||
+||||||
+||||||
