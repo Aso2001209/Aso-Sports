@@ -66,8 +66,7 @@ package "ECサイト" as target_system {
         name
         reg_date
     }
-    
-    entity "競技テーブル" as category <m_category> <<M,MASTER_MARK_COLOR>> {
+     entity "競技テーブル" as Competition <Competition> <<M,MASTER_MARK_COLOR>> {
         + sports-id [PK]
         --
         Competition-name
