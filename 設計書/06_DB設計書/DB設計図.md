@@ -50,5 +50,5 @@
 |category_id|int(11)||○|○|
 |image|varchar(200)||○||
 |detail|varchar(500)||||
-|del_flag|int(11)||||
+|del_flag|int(1)||||
 |reg_date|date||○||
